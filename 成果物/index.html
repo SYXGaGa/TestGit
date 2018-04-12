@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--设置视口,只在移动端生效,设置视口宽度=当前手机设备宽度，默认缩放1，用户不允许手动缩放-->
+		<meta name="viewport" content="width=width-device,initial-scale=1.0,user-scalable=no"/>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<script type="text/javascript">
+			var designWidth = 760;//设计稿的尺寸
+			var remToPx = 100;//rem和像素的转换比
+			
+			//动态计算html基准字号
+			document.documentElement.style.fontSize = (window.innerWidth/designWidth) * remToPx + 'px';
+			
+			//视口尺寸被改变，重新设置字号
+			window.onresize = function() {
+				//动态计算html基准字号
+				document.documentElement.style.fontSize = (window.innerWidth/designWidth) * remToPx + 'px';
+				
+			}
+		</script>
+	</head>
+	<body>
+		<!--头部开始-->
+		<header>
+			<h1>文章</h1>
+			<img src="img/search.png" class="search-btn"/>
+		</header>
+		<!--头部结束-->
+		<!--列表开始-->
+		<ul class="list">
+			<li>
+				<img src="img/10.png" class="img-left"/>
+				<div class="content-right">
+					<h3>在无趣的时代活的有趣</h3>
+					<h4>失眠精灵</h4>
+					<p>
+						<img src="img/kan.png" />
+						<span class="txt">2300</span>
+						<img src="img/shoucang.png"/>
+						<span class="txt">146</span>
+						<img src="img/liuyan.png"/>
+						<span class="txt">13</span>
+						<span class="date">17/3/3</span>
+					</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/9.png" class="img-left"/>
+				<div class="content-right">
+					<h3>深晚新夜湖</h3>
+					<h4>麦子麦</h4>
+					<p>
+						<img src="img/kan.png" />
+						<span class="txt">890</span>
+						<img src="img/shoucang.png"/>
+						<span class="txt">26</span>
+						<img src="img/liuyan.png"/>
+						<span class="txt">4</span>
+						<span class="date">17/2/28</span>
+					</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/8.png" class="img-left"/>
+				<div class="content-right">
+					<h3>太阳可以作证</h3>
+					<h4>削皮的土豆</h4>
+					<p>
+						<img src="img/kan.png" />
+						<span class="txt">1633</span>
+						<img src="img/shoucang.png"/>
+						<span class="txt">94</span>
+						<img src="img/liuyan.png"/>
+						<span class="txt">38</span>
+						<span class="date">17/2/24</span>
+					</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/7.png" class="img-left"/>
+				<div class="content-right">
+					<h3>想念是一种浅浅的美好</h3>
+					<h4>蓝色树叶</h4>
+					<p>
+						<img src="img/kan.png" />
+						<span class="txt">3258</span>
+						<img src="img/shoucang.png"/>
+						<span class="txt">271</span>
+						<img src="img/liuyan.png"/>
+						<span class="txt">164</span>
+						<span class="date">17/2/23</span>
+					</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/6.png" class="img-left"/>
+				<div class="content-right">
+					<h3>追求生命中的第一缕光</h3>
+					<h4>逍遥江月</h4>
+					<p>
+						<img src="img/kan.png" />
+						<span class="txt">2300</span>
+						<img src="img/shoucang.png"/>
+						<span class="txt">146</span>
+						<img src="img/liuyan.png"/>
+						<span class="txt">13</span>
+						<span class="date">17/3/3</span>
+					</p>
+				</div>
+			</li>
+		</ul>
+		<!--列表结束-->
+		<!--底部导航开始-->
+		<nav class="nav-bottom">
+			<a href="#">
+				<img src="img/shouye.png" alt="" />
+				<i>首页</i>
+			</a>
+			<a href="#">
+				<img src="img/wenzhang.png" alt="" />
+				<i style="color: #71c1f4;">文章</i>
+			</a>
+			
+			<a href="#" class="btn-center">
+				<img src="img/duo.png"/>
+			</a>
+			
+			<a href="#">
+				<img src="img/tongzhi.png" alt="" />
+				<i>通知</i>
+			</a>
+			<a href="#">
+				<img src="img/wode.png" alt="" />
+				<i>我的</i>
+			</a>
+		</nav>
+		<!--底部导航结束-->
+	</body>
+</html>
